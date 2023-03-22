@@ -1,4 +1,36 @@
 .products__container {
     display: flex;
     flex-direction: column;
+    
+}
+
+
+
+
+.product__line__container{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.product__line__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 95%;
+    
+}
+.product__line__header h3{
+    font-weight: bold;
+    color:    #000;
+    font-size: 22px;
+}
+.product__line__header button, a{
+    color:    #2A7AE4;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background-color: #fff;
+ margin-right: 10px;
 }

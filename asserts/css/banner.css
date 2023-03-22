@@ -22,6 +22,7 @@
     font-weight: bold;
     margin-bottom: 8px;
     margin-left: 16px;
+    
 }
 .banner__text__button {
     background-color: #2a7ae4;
@@ -35,4 +36,5 @@
     font-size: 14px;
     color: white;
     text-decoration: none;
+    background-color: #2a7ae4;
 }

@@ -1,0 +1,12 @@
+.footer__container{
+    display: flex;
+    padding: 15px 0;
+    background: #FFFFFF;
+   justify-content: space-around;
+   width: 100%;
+   
+}
+.footer__container p{
+    width: 60%;
+    text-align: center;
+}
