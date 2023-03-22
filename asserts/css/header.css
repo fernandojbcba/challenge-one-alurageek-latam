@@ -1,0 +1,26 @@
+.header__container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+.header__container__logo {
+}
+.header__logo {
+    width: 70%;
+}
+.header__search__input {
+    display: none;
+}
+.header__login__btn {
+    background-color: #ffffff;
+    border: 1px solid #2a7ae4;
+    padding: 5px 30px;
+}
+.header__login__btn:hover {
+    background-color: #2a7ae4;
+    border: 1px solid #ffffff;
+    color: white;
+}
