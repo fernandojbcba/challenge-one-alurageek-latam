@@ -39,3 +39,6 @@ Ve a la pestaña "Acerca" o "About" de tu proyecto en el menú de la izquierda d
 6) ¡No olvides publicar un link o un vídeo de tu proyecto en Linkedin! 🏁
 
      <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+
+https://my-json-server.typicode.com/fernandojbcba/challenge-one-alurageek-latam

@@ -1,11 +1,20 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "hello"
-      }
+    "usuario": [
+        {
+            "name": "admin",
+            "email": "admin@admin.com",
+            "password": "Abc123",
+            "id": "1"
+        }
     ],
-    "profile": {
-      "name": "typicode"
-    }
-  }
+    "productos": [
+        {
+            "image": "",
+            "category": "consolas",
+            "name": "mandos bicolor",
+            "price": "60.00",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "id": "10"
+        }
+    ]
+}
