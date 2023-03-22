@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+</head>
+<body>
+    <body>
+        <header class="header__container">
+            <div class="header__container__logo">
+                <a href="index.html"><img class="header__logo" src="img/Logo.png" alt="Logotipo AluraGeek"></a>
+            </div>
+    
+            <div class="header__container__login" data-headerlogin>
+            </div>
+    
+            <div class="header__container__search">
+                <form action="submit" class="header__search" data-search>
+                    <input class="header__search__input" type="text"  data-searchinput>
+                    <button type="submit" class="header__search__btn">
+                        <i class="fa fa-search">
+                        </i>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <section class="banner__container">
+                <div class="banner__text__container">
+                    <h2>Marzo Promocional</h2>
+                    <p>Productos seleccionados con 33% de descuento</p>
+                    <button class="banner__text__button"><a href="#consolas">Ver consolas </a></button>
+                </div>
+            </section>
+    
+            <section class="products__container">
+                <div class="product__line__container">
+                    <div class="product__line__header">
+                        <h3 id="star-wars">Star Wars</h3>
+                        <button><a href="products.html">Ver todo</a><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                    <div class="product__line__products" data-product1>
+                        
+                    </div>
+                </div>
+                <div class="product__line__container">
+                    <div class="product__line__header">
+                        <h3 id="consolas">Consolas</h3>
+                        <button><a href="products.html">Ver todo</a><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                    <div class="product__line__products" data-product2>
+                       
+                    </div>
+                </div>
+                <div class="product__line__container">
+                    <div class="product__line__header">
+                        <h3 id="diversos">Diversos</h3>
+                        <button><a href="products.html">Ver todo</a><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                    <div class="product__line__products" data-product3>
+                        
+                        
+                    </div>
+    
+                </div>
+            </section>
+            <section class="info__container">
+                <div class="info__container__left">
+                    <img class="info__container__left__img" src="img/Logo-2.png" alt="">
+                    <ul class="info__container__left__list">
+                        <li class="info__container__left__list__item">
+                            <a href="">Quienes somos</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Política de privacidad</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Programa de fidelidad</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Nuestras tiendas</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Quiero ser franquiciado</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Anúncie aquí</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info__container__contact">
+                    <h2 class="info__container__contact__title">Hable con nosotros</h2>
+                    <form class="info__container__contact__form" id="contactform">
+                        <div class="element-container">
+                            <input class="info__container__contact__name" type="text" placeholder="Nombre" required
+                                pattern="^[\s\S]{0,40}$" data-tipo="name">
+                            <span class="element-message-error"></span>
+                        </div>
+                        <div class="element-container">
+                            <textarea class="info__container__contact__message" cols="30" rows="4" placeholder="Mensaje"
+                                required data-tipo="message" maxlength="120"></textarea>
+                            <span class="element-message-error"></span>
+                        </div>
+                        <button class="info__container__contact__button">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__container">
+            <p>Desarrollado por Benavidez Fernando - 2023</p>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="module" src="controllers/client-controller.js"></script>
+        <script type="module" src="js/validaciones.js"></script>
+        <script type="module" src="controllers/product-controller.js"></script>
+        <script type="module" src="controllers/product-controller-search.js"></script>
+    </body>
+    
+    </html>
