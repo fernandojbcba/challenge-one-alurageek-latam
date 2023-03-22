@@ -1,11 +1,11 @@
 {
-    "client": [
+    "posts": [
       {
-        "name": "Rosey  Morera",
-        "email": "rosey.morera@gmail.com",
-        "password": "Abc123",
-        "id": "fc091de6-7a2e-44e4-b8f8-f6e21db5y4e8"
-   
+        "id": 1,
+        "title": "hello"
       }
-    ]
-}
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
