@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/banner.css">
    <link rel="stylesheet" href="../css/body.css">
    <link rel="stylesheet" href="../css/footer.css">
+   <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
     <title>Registro</title>
 
 </head>
@@ -46,20 +47,20 @@
             </section>
             <section class="section_registro__container">
                 <h2 class="registro__container__title">Registro</h2>
-                <form class="registro__container__form" id="registroform">
+                <form class="registro__container__form" id="registroform" data-form>
                     <div class="registro-container">
                         <input class="registro__container__name" type="text" placeholder="Nombre" required
-                            pattern="^[\s\S]{0,40}$" data-tipo="name">
+                            pattern="^[\s\S]{0,40}$"  data-nombre>
                         <span class="registro-nombre-error"></span>
                     </div>
                     <div class="registro-container">
                         <input class="registro__container__email" type="email" placeholder="email" required
-                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" data-tipo="email">
+                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" data-email>
                         <span class="registro-email-error"></span>
                     </div>
                     <div class="registro-container">
                         <input class="registro__container__password" type="password" placeholder="password" required
-                            pattern=“(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}” data-tipo="password">
+                             data-password>
                         <span class="registro-password-error"></span>
                     </div>
                     <button class="registro__container__button">Registrar</button>

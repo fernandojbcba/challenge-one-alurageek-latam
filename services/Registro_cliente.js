@@ -1,8 +1,15 @@
-const reg_nombre = document.querySelector('#registro__container__name')
-const reg_email = document.querySelector('#registro__container__email')
-const reg_pass = document.querySelector('#registro__container__password')
+const formulario = document.querySelector('[data-form]')
 
-const reg_buttom = document.querySelector('#registro__container__button')
+formulario.addEventListener('submit', (evento) => {
+    evento.preventDefault()
+    const reg_nombre = document.querySelector('[data-nombre]').value
+    const reg_email = document.querySelector('[data-email]').value
+    const reg_pass = document.querySelector('[data-password]').value
+
+    CrearUsuario(reg_nombre, reg_email, reg_pass)
+        .then((response) => console.log(response))
+        .catch(console.log)
+})
 
 const listaClientes = async () => {
     const peticion = await fetch(
@@ -10,24 +17,22 @@ const listaClientes = async () => {
     )
 
     const datos = await peticion.json()
-    console.log(typeof datos)
 }
 
 const CrearUsuario = (nombre, email, password) => {
     return fetch(
-        'https://my-json-server.typicode.com/fernandojbcba/challenge-one-alurageek-latam/',
+        'https://my-json-server.typicode.com/fernandojbcba/challenge-one-alurageek-latam/usuario',
         {
             method: 'POST',
+            body: JSON.stringify({
+                nombre: nombre,
+                email: email,
+                password: password,
+                id: uuid.v4(),
+            }),
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json; charset=UTF-8 ',
             },
-            body: JSON.stringify({ nombre, email, id: uuid.v4() }),
         }
     )
 }
-
-export const clientServices = {
-    listaClientes,
-    CrearUsuario,
-}
-CrearUsuario('fernando', 'fer@fer.com', '123')
