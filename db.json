@@ -1,19 +1,19 @@
 {
     "usuario": [
         {
-            "name": "admin",
+            "nombre": "admin",
             "email": "admin@admin.com",
-            "password": "Abc123",
+            "password": "abc123",
             "id": "1"
         }
     ],
     "productos": [
         {
-            "image": "",
-            "category": "consolas",
-            "name": "mandos bicolor",
-            "price": "60.00",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "imagen": "",
+            "categoria": "consolas",
+            "nombre": "mandos bicolor",
+            "precio": "60.00",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             "id": "10"
         }
     ]
