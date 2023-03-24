@@ -12,27 +12,24 @@ formulario.addEventListener('submit', (evento) => {
 })
 
 const listaClientes = async () => {
-    const peticion = await fetch(
-        'https://my-json-server.typicode.com/fernandojbcba/challenge-one-alurageek-latam/usuario'
-    )
+    const peticion = await fetch('https://alurageekserver.onrender.com/usuario')
 
     const datos = await peticion.json()
+    console.log(datos)
 }
 
 const CrearUsuario = (nombre, email, password) => {
-    return fetch(
-        'https://my-json-server.typicode.com/fernandojbcba/challenge-one-alurageek-latam/usuario',
-        {
-            method: 'POST',
-            body: JSON.stringify({
-                nombre: nombre,
-                email: email,
-                password: password,
-                id: uuid.v4(),
-            }),
-            headers: {
-                'Content-Type': 'application/json; charset=UTF-8 ',
-            },
-        }
-    )
+    return fetch('https://alurageekserver.onrender.com/usuario', {
+        method: 'POST',
+        body: JSON.stringify({
+            nombre: nombre,
+            email: email,
+            password: password,
+            id: uuid.v4(),
+        }),
+        headers: {
+            'Content-Type': 'application/json; charset=UTF-8 ',
+        },
+    })
 }
+listaClientes()
