@@ -11,15 +11,13 @@ formulario.addEventListener('submit', (evento) => {
         .catch(console.log)
 })
 
-const listaClientes = async () => {
-    const peticion = await fetch('https://alurageekserver.onrender.com/usuario')
-
-    const datos = await peticion.json()
-    console.log(datos)
-}
+const listarClientes = () =>
+    fetch(`https://alurageekserver.onrender.com/usuario`).then((respuesta) =>
+        respuesta.json()
+    )
 
 const CrearUsuario = (nombre, email, password) => {
-    return fetch('https://alurageekserver.onrender.com/usuario', {
+    return fetch(`https://alurageekserver.onrender.com/usuario`, {
         method: 'POST',
         body: JSON.stringify({
             nombre: nombre,
@@ -32,4 +30,36 @@ const CrearUsuario = (nombre, email, password) => {
         },
     })
 }
-listaClientes()
+
+const eliminarUsuario = (id) => {
+    return fetch(`https://alurageekserver.onrender.com/usuario/${id}`, {
+        method: 'DELETE',
+    })
+}
+const detalleUsuario = (id) => {
+    return fetch(`https://alurageekserver.onrender.com/usuario/${id}`).then(
+        (respuesta) => respuesta.json()
+    )
+}
+const editarUsuario = (nombre, email, password, id) => {
+    return fetch(`https://alurageekserver.onrender.com/usuario/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            nombre: nombre,
+            email: email,
+            password: password,
+        }),
+    })
+        .then((respuesta) => respuesta)
+        .catch((err) => console.error('ha ocurrido un error'))
+}
+export const RegistroCliente = {
+    CrearUsuario,
+    listarClientes,
+    eliminarUsuario,
+    editarUsuario,
+    detalleUsuario,
+}
