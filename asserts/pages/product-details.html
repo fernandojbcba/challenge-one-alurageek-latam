@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Product details</title>
     <!-- links -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/section-products.css">
     <link rel="stylesheet" href="css/section-info.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,19 +37,15 @@
         </div>
     </header>
     <main>
-        <section class="login__container">
-            <h2 class="login__title">Iniciar sesión</h2>
-            <form class="login__form" action="submit" data-login>
-                <div class="element-container">
-                    <input class="login__form__email" type="email" placeholder="Correo electrónico" required data-tipo="email" data-email>
-                    <span class="element-message-error"></span>
+        <section class="product__container">
+            <div class="product__details__container" data-productdetails>
+            </div>
+            <div class="product__related">
+                <h2 class="product__related__title">Productos similares</h2>
+                <div class="product__line__products" data-similaritems>
+
                 </div>
-                <div class="element-container">
-                    <input class="login__form__password" type="password" placeholder="Contraseña" required data-tipo="password" data-password pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$">
-                    <span class="element-message-error"></span>
-                </div>
-                <button type="submit" class="login__form__btn">Entrar</button>
-            </form>
+            </div>
 
         </section>
         <section class="info__container">
@@ -98,10 +95,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="js/validaciones.js"></script>
-    <script type="module" src="controllers/product-controller.js"></script>
-    <script type="module" src="controllers/client-controller-search.js"></script>
     <script type="module" src="controllers/product-controller-search.js"></script>
-
+    <script type="module" src="controllers/product-controller-details.js"></script>
 </body>
 
 </html>

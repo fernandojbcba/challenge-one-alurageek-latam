@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Agregar producto</title>
     <!-- links -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/section-info.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/add-product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+
 
 </head>
 
@@ -36,21 +37,47 @@
         </div>
     </header>
     <main>
-        <section class="login__container">
-            <h2 class="login__title">Iniciar sesión</h2>
-            <form class="login__form" action="submit" data-login>
-                <div class="element-container">
-                    <input class="login__form__email" type="email" placeholder="Correo electrónico" required data-tipo="email" data-email>
-                    <span class="element-message-error"></span>
+        <div class="new__product__container">
+            <h1 class="new__product__title">Agregar nuevo producto</h1>
+            <form class="new__product__form" action="submit" data-form>
+                <div class="element-container" id="newImageContainer">
+                    <img src="img/preview.png" id="new__product__image__preview" alt="Su imagen aquí" width="100"
+                        height="100" />
+                    <input class="new__product__image__url" type="file" required data-tipo="image" data-image
+                        onchange="document.getElementById('new__product__image__preview').src = window.URL.createObjectURL(this.files[0])">
                 </div>
                 <div class="element-container">
-                    <input class="login__form__password" type="password" placeholder="Contraseña" required data-tipo="password" data-password pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$">
-                    <span class="element-message-error"></span>
-                </div>
-                <button type="submit" class="login__form__btn">Entrar</button>
-            </form>
+                    <select class="new__product__category" name="categories" id="category" data-tipo="category" required
+                        data-category>
+                        <option value="" disabled selected>Seleccione una categoría</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
 
-        </section>
+                    <span class="element-message-error"></span>
+                </div>
+                <div class="element-container">
+                    <input class="new__product__name" id="name" name="name" type="text"
+                        placeholder="Nombre del producto" required data-tipo="product" pattern="^[\s\S]{0,20}$"
+                        data-name>
+                    <span class="element-message-error"></span>
+                </div>
+                <div class="element-container">
+                    <input class="new__product__price" id="price" name="price" type="number"
+                        placeholder="Precio del producto" required data-tipo="price" data-price>
+                    <span class="element-message-error"></span>
+                </div>
+                <div class="element-container">
+                    <input class="new__product__description" id="description" name="description" type="text"
+                        placeholder="Descripcion del producto" required data-tipo="description"
+                        pattern="^[\s\S]{0,150}$" data-description>
+                    <span class="element-message-error"></span>
+                </div>
+                <button type="submit" class="new__product__add__btn">Agregar producto</button>
+
+            </form>
+        </div>
         <section class="info__container">
             <div class="info__container__left">
                 <img class="info__container__left__img" src="img/Logo-2.png" alt="">
@@ -98,10 +125,11 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="js/validaciones.js"></script>
-    <script type="module" src="controllers/product-controller.js"></script>
-    <script type="module" src="controllers/client-controller-search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="controllers/product-controller-add.js"></script>
     <script type="module" src="controllers/product-controller-search.js"></script>
-
 </body>
 
 </html>

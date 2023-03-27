@@ -1,38 +1,38 @@
 {
-  "usuario": [
-    {
-      "nombre": "admin",
-      "email": "admin@admin.com",
-      "password": "abc123",
-      "id": "1"
-    },
-    {
-      "nombre": "juna",
-      "email": "juan@juan.com",
-      "password": "123456789",
-      "id": "806d3f25-0bd3-48dd-8ef5-201159a061bf"
-    },
-    {
-      "nombre": "perri",
-      "email": "juan@juan.com",
-      "password": "salado",
-      "id": "65e3990a-a7a0-4390-b0e3-40ff933937d4"
-    },
-    {
-      "nombre": "pepe",
-      "email": "juan@juan.com",
-      "password": "4567899d5sad",
-      "id": "a8b7e3a6-7ecd-49c2-bdb2-0fc54d7f27cf"
-    }
-  ],
-  "productos": [
-    {
-      "imagen": "",
-      "categoria": "consolas",
-      "nombre": "mandos bicolor",
-      "precio": "60.00",
-      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "id": "10"
-    }
-  ]
+    "usuario": [
+        {
+            "nombre": "admin",
+            "email": "admin@admin.com",
+            "password": "abc123",
+            "id": "1"
+        },
+        {
+            "nombre": "juna",
+            "email": "juan@juan.com",
+            "password": "123456789",
+            "id": "806d3f25-0bd3-48dd-8ef5-201159a061bf"
+        },
+        {
+            "nombre": "perri",
+            "email": "juan@juan.com",
+            "password": "salado",
+            "id": "65e3990a-a7a0-4390-b0e3-40ff933937d4"
+        },
+        {
+            "nombre": "pepe",
+            "email": "juan@juan.com",
+            "password": "4567899d5sad",
+            "id": "a8b7e3a6-7ecd-49c2-bdb2-0fc54d7f27cf"
+        }
+    ],
+    "productos": [
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/asserts/img/productos/consola_4.png",
+            "categoria": "consolas",
+            "nombre": "mandos bicolor",
+            "precio": "60.00",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "id": "10"
+        }
+    ]
 }
