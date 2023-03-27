@@ -1,0 +1,133 @@
+.info__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1rem;
+    background: var(--light-background-color);
+}
+
+.info__container__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.info__container__left img {
+    width: 40%;
+}
+
+.info__container__left__list {
+    text-align: center;
+}
+
+.info__container__left__list__item {
+    padding-bottom: 1rem;
+}
+
+.info__container__left__list__item:hover {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.info__container__contact {
+    padding-left: 1rem;
+}
+
+.info__container__contact__title {
+    font-weight: bold;
+}
+
+.info__container__contact__name,
+.info__container__contact__message {
+    margin: 0.5rem 0;
+    width: 95%;
+    background: var(--secundary-color);
+}
+
+.info__container__contact__button {
+    background-color: var(--primary-color);
+    width: 40%;
+    color: var(--secundary-color);
+    height: 2rem;
+    font-size: 14px;
+}
+
+.element-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.new__product__form .element-container{
+    width: 100%;
+}
+
+.element-container--invalid {
+    margin-bottom: 0.5rem;
+}
+
+.element-message-error {
+    display: none;
+    font-size: 12px;
+}
+.element-message-error::before{
+    content: url('https://api.iconify.design/uil/exclamation-triangle.svg?color=%23e65100&width=13&height=13');
+    vertical-align: middle;
+    
+}
+
+.element-container--invalid .element-message-error {
+    color: var(--contrast-dark-color);
+    display: block;
+    
+}
+
+@media screen and (min-width:768px) {
+    .info__container {
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+
+    .info__container__left {
+        width: 30%;
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+    .info__container__left__img{
+        width: 176px;
+        height: 50px;
+    }
+    .info__container__contact{
+        width: 70%;
+    }
+
+    .element-container{
+        width: 60%;
+    }
+
+    .new__product__form .element-container{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    .info__container{
+        justify-content: space-between;
+       font-size: 18px;
+       margin-top: 1rem;
+    }
+    .info__container__left {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+
+    .info__container__contact{
+        width: 60%;
+    }
+    .info__container__contact__button {
+        font-size: 18px;
+    }
+}

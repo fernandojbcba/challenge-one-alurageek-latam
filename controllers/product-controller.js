@@ -74,7 +74,7 @@ const productTypeConsola = document.querySelector('[data-product2]')
 const productTypeDiversos = document.querySelector('[data-product3]')
 
 productServices
-    .productsList()
+    .ListaProductos()
     .then((data) => {
         data.forEach(
             ({ imagen, categoria, nombre, precio, descripcion, id }) => {
@@ -86,7 +86,7 @@ productServices
                     descripcion,
                     id
                 )
-
+                console.log(imagen)
                 if (href.includes('products')) {
                     product.appendChild(newLine)
                 }

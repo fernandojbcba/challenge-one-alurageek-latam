@@ -1,8 +1,8 @@
-const productsList = () =>
+const ListaProductos = () =>
     fetch('https://alurageekserver.onrender.com/productos').then((respuesta) =>
         respuesta.json()
     )
-const addProduct = (imagen, categoria, nombre, precio, descripcion) => {
+const agregarProductos = (imagen, categoria, nombre, precio, descripcion) => {
     return fetch('https://alurageekserver.onrender.com/productos', {
         method: 'POST',
         headers: {
@@ -29,9 +29,9 @@ const detalleProductos = (id) => {
         (respuesta) => respuesta.json()
     )
 }
-const buscarproductos = (name) => {
+const buscarproductos = (nombre) => {
     return fetch(
-        `https://alurageekserver.onrender.com/productos?q=${name}`
+        `https://alurageekserver.onrender.com/productos?q=${nombre}`
     ).then((respuesta) => respuesta.json())
 }
 
@@ -53,8 +53,8 @@ const editarProducto = (imagen, categoria, nombre, precio, descripcion, id) => {
         .catch((err) => console.error('ha ocurrido un error', err))
 }
 export const productServices = {
-    productsList,
-    addProduct,
+    ListaProductos,
+    agregarProductos,
     eliminarProductos,
     detalleProductos,
     editarProducto,

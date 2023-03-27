@@ -1,0 +1,101 @@
+.products__container{
+    width: 100%;
+    background: var(--light-background-color);
+    padding-bottom: 2rem;
+    
+}
+
+
+.product__line__container{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.product__line__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 95%;
+}
+.product__line__header h3{
+    font-weight: bold;
+}
+.product__line__header button{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.product__line__products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.product__line__products__details{
+    margin: 0.5rem;
+    position: relative;
+}
+.product__line__products__details__product-img{
+    width: 156px;
+    height: 174px;
+}
+
+.product__line__products__details__delete-btn{
+    position: absolute;
+    top: 5%;
+    right: 28%;
+    color: #FFFFFF;
+    
+}
+.product__line__products__details__edit-btn{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: #FFFFFF;
+    
+}
+.product__line__products__details__product-btn{
+    color:  var(--primary-color);
+    font-weight: 500;
+}
+
+.product__line__all__products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.product__line__all__products__title{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+}
+.product__line__all__products__btn{
+    background: var(--primary-color);
+    color: #FFFFFF;
+    width: 40%;
+    height: 2rem;
+}
+
+
+@media screen and (min-width:1024px){
+    
+    .product__line__all__products{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        
+    }
+    .product__line__all__products__title{
+        margin: 0 0 0 1rem;
+    }
+    .product__line__all__products__btn{
+        width: 20%;
+        margin-right: 1rem;
+    }
+}

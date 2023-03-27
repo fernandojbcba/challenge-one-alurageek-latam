@@ -1,0 +1,116 @@
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: #FFFFFF;
+
+}
+
+
+.header__container__logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    width: 30%;
+}
+
+.header__logo {
+    width: 100px;
+    height: 28px;
+}
+
+.header__container__login {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 40%;
+    height: 100%;
+
+}
+
+.header__container__login button {
+    padding: 0.5rem 3rem;
+    border: 1px solid var(--primary-color);
+}
+
+.header__container__login button a {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--primary-color);
+}  
+
+
+.header__container__search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.header__search{
+    display: flex;
+}
+
+.header__search__input {
+    width: 80%;
+    background: var(--input-search-color);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+
+}
+
+.header__search__input:focus{
+    border: none;
+}
+
+.header__search__btn i{
+    font-size: 16px;
+    justify-self: flex-end;
+}
+.header__search__btn {
+    color: var(--contrast-dark-color);
+    font-size: 9px;
+    border: none;
+    justify-self: flex-end;
+}
+
+@media screen and (min-width:768px) {
+    .header__container {
+        justify-content: flex-start;
+    }
+    .header__container__logo {
+        width: fit-content;
+    }
+    .header__container__search{
+        width: 40%;
+    }
+
+    .header__container__login {
+        order: 3;
+        justify-content: flex-end;
+    }
+
+
+    .header__search {
+        align-items: center;
+        padding-left: 2rem;
+    }
+    .header__search__input{
+        border-radius: 25px 0 0 25px;
+    }
+    .header__search__btn i {
+        background: var(--input-search-color);
+        border-radius: 0 25px 25px 0;
+        padding-right: 1rem;
+        font-size: 21px
+    }
+}
