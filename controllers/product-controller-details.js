@@ -27,7 +27,7 @@ const productId = new URL(window.location).searchParams.get('id')
 productServices
     .detalleProductos(productId)
     .then(({ imagen, categoria, nombre, precio, descripcion, id }) => {
-        const categoryId = category
+        const categoryId = categoria
         const newLine = productDetailsContent(
             imagen,
             categoria,
