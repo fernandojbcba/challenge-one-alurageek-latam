@@ -56,7 +56,7 @@ const editarUsuario = (nombre, email, password, id) => {
         .then((respuesta) => respuesta)
         .catch((err) => console.error('ha ocurrido un error'))
 }
-export const clienteServices = {
+export const clientServices = {
     CrearUsuario,
     listarClientes,
     eliminarUsuario,
