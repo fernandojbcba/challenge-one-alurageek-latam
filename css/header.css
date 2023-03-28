@@ -1,7 +1,6 @@
 .header__container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 10%;
@@ -85,7 +84,7 @@
 
 @media screen and (min-width:768px) {
     .header__container {
-        justify-content: flex-start;
+      
     }
     .header__container__logo {
         width: fit-content;
@@ -96,11 +95,11 @@
 
     .header__container__login {
         order: 4;
-        justify-content: flex-end;
+       
     }
     .header__container__nombrelog {
         order:3;
-        justify-content: flex-end;
+      
     }
 
 
