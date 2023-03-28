@@ -4,10 +4,10 @@ const form = document.querySelector('[data-login]')
 
 form.addEventListener('submit', (evento) => {
     evento.preventDefault()
+
     const inputEmail = document.querySelector('[data-email]').value
     const inputPassword = document.querySelector('[data-password]').value
-    console.log(inputEmail)
-    console.log(inputPassword)
+
     clientServices
         .listarClientes()
         .then((data) => {
