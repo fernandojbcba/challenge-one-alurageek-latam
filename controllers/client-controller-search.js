@@ -18,7 +18,7 @@ form.addEventListener('submit', (evento) => {
             })
             if (userFound) {
                 localStorage.setItem('email', inputEmail)
-                window.location.assign(`/index.html`)
+                window.location.assign(`/`)
             } else {
                 Swal.fire({
                     icon: 'error',
