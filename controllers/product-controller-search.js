@@ -84,12 +84,6 @@ searchForm.addEventListener('submit', (evento) => {
             }
         })
     } else {
-        window.location.assign(
-            `${
-                url.href.includes('challenge-one-alurageek-latam')
-                    ? '/challenge-one-alurageek-latam'
-                    : ''
-            }./search-product.html?q=${nombre}`
-        )
+        window.location.assign(`/search-product.html?q=${nombre}`)
     }
 })
