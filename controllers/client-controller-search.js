@@ -14,14 +14,14 @@ form.addEventListener('submit', (evento) => {
             let userFound = false
             data.forEach(({ email, password, id ,nombre}) => {
                 if (email == inputEmail && password == inputPassword) {
-                    userFound = true
+                    userFound = true;
+                    console.log("123");
                     return
                 }
             })
             if (userFound) {
-                localStorage.setItem('email', inputEmail);
-                console.log(nombre);
-                window.location.assign(`/`);
+                localStorage.setItem('email', inputEmail)
+                window.location.assign(`/`)
             } else {
                 Swal.fire({
                     icon: 'error',
@@ -32,4 +32,6 @@ form.addEventListener('submit', (evento) => {
         })
         .catch((error) => console.error('Ocurrio un error', error))
     form.reset()
+
+
 })
