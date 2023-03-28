@@ -15,7 +15,7 @@ form.addEventListener('submit', (evento) => {
             data.forEach(({ email, password, id ,nombre}) => {
                 if (email == inputEmail && password == inputPassword) {
                     userFound = true
-                    let nombreSesion = nombre
+                    var nombreSesion = nombre
                     return
                 }
             })
