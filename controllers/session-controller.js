@@ -6,5 +6,6 @@ export function userLoggedIn() {
 
 export function userLogout() {
     localStorage.removeItem("email");
+    localStorage.removeItem("nombrex")
     window.location.reload();
 }
