@@ -1,101 +1,138 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Búsqueda</title>
-    <!-- links -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/section-info.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/section-products.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-
-
-</head>
-<body>
-    <header class="header__container">
-        <div class="header__container__logo">
-            <a href="index.html"><img class="header__logo" src="img/Logo.png" alt="Logotipo AluraGeek"></a>
-        </div>
-        <div class="header__container__search">
-            <form action="submit" class="header__search" data-search>
-                <input class="header__search__input" type="text"  data-searchinput>
-                <button type="submit" class="header__search__btn">
-                    <i class="fa fa-search">
-                    </i>
-                </button>
-            </form>
-        </div>
-    </header>
-    <main>
-        <section class="products__container">
-            <div class="product__line__container">
-                <div class="product__line__all__products">
-                    <h1 class="product__line__all__products__title">Resultados de la búsqueda</h1>
-                </div>
-                <div class="product__line__products" data-similar>
-                    
-                </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AluraGeek - Búsqueda</title>
+        <!-- links -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/section-info.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/section-products.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header__container">
+            <div class="header__container__logo">
+                <a href="index.html"
+                    ><img
+                        class="header__logo"
+                        src="img/Logo.png"
+                        alt="Logotipo AluraGeek"
+                /></a>
             </div>
-        </section>
-        <section class="info__container">
-            <div class="info__container__left">
-                <img class="info__container__left__img" src="img/Logo-2.png" alt="">
-                <ul class="info__container__left__list">
-                    <li class="info__container__left__list__item">
-                        <a href="">Quienes somos</a>
-                    </li>
-                    <li class="info__container__left__list__item">
-                        <a href="">Política de privacidad</a>
-                    </li>
-                    <li class="info__container__left__list__item">
-                        <a href="">Programa de fidelidad</a>
-                    </li>
-                    <li class="info__container__left__list__item">
-                        <a href="">Nuestras tiendas</a>
-                    </li>
-                    <li class="info__container__left__list__item">
-                        <a href="">Quiero ser franquiciado</a>
-                    </li>
-                    <li class="info__container__left__list__item">
-                        <a href="">Anúncie aquí</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="info__container__contact">
-                <h2 class="info__container__contact__title">Hable con nosotros</h2>
-                <form class="info__container__contact__form" id="contactform">
-                    <div class="element-container">
-                        <input class="info__container__contact__name" type="text" placeholder="Nombre" required
-                            pattern="^[\s\S]{0,40}$" data-tipo="name">
-                        <span class="element-message-error"></span>
-                    </div>
-                    <div class="element-container">
-                        <textarea class="info__container__contact__message" cols="30" rows="4" placeholder="Mensaje"
-                            required data-tipo="message" maxlength="120"></textarea>
-                        <span class="element-message-error"></span>
-                    </div>
-                    <button class="info__container__contact__button">Enviar mensaje</button>
+            <div class="header__container__search">
+                <form action="submit" class="header__search" data-search>
+                    <input
+                        class="header__search__input"
+                        type="text"
+                        data-searchinput
+                    />
+                    <button type="submit" class="header__search__btn">
+                        <i class="fa fa-search"> </i>
+                    </button>
                 </form>
             </div>
-        </section>
-    </main>
-    <footer class="footer__container">
-        <p>Desarrollado por Rosey Morera - 2023</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="controllers/product-controller-search.js"></script>
-</body>
-
+        </header>
+        <main>
+            <section class="products__container">
+                <div class="product__line__container">
+                    <div class="product__line__all__products">
+                        <h1 class="product__line__all__products__title">
+                            Resultados de la búsqueda
+                        </h1>
+                    </div>
+                    <div class="product__line__products" data-similar></div>
+                </div>
+            </section>
+            <section class="info__container">
+                <div class="info__container__left">
+                    <img
+                        class="info__container__left__img"
+                        src="img/Logo-2.png"
+                        alt=""
+                    />
+                    <ul class="info__container__left__list">
+                        <li class="info__container__left__list__item">
+                            <a href="">Quienes somos</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Política de privacidad</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Programa de fidelidad</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Nuestras tiendas</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Quiero ser franquiciado</a>
+                        </li>
+                        <li class="info__container__left__list__item">
+                            <a href="">Anúncie aquí</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info__container__contact">
+                    <h2 class="info__container__contact__title">
+                        Hable con nosotros
+                    </h2>
+                    <form
+                        class="info__container__contact__form"
+                        id="contactform"
+                    >
+                        <div class="element-container">
+                            <input
+                                class="info__container__contact__name"
+                                type="text"
+                                placeholder="Nombre"
+                                required
+                                pattern="^[\s\S]{0,40}$"
+                                data-tipo="name"
+                            />
+                            <span class="element-message-error"></span>
+                        </div>
+                        <div class="element-container">
+                            <textarea
+                                class="info__container__contact__message"
+                                cols="30"
+                                rows="4"
+                                placeholder="Mensaje"
+                                required
+                                data-tipo="message"
+                                maxlength="120"
+                            ></textarea>
+                            <span class="element-message-error"></span>
+                        </div>
+                        <button class="info__container__contact__button">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__container">
+            <p>Benavidez Fernando - 2023</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+            integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            type="module"
+            src="controllers/product-controller-search.js"
+        ></script>
+    </body>
 </html>

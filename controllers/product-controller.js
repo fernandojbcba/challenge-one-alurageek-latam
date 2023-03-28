@@ -86,7 +86,7 @@ productServices
                     descripcion,
                     id
                 )
-                console.log(imagen)
+
                 if (href.includes('products')) {
                     product.appendChild(newLine)
                 }

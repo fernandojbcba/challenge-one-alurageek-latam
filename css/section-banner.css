@@ -1,32 +1,32 @@
 .banner__container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/banner.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
     width: 100%;
-    
+    height: 192px;
+    background-image: url(../img/Hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    align-items: flex-end;
 }
-.banner__text__container{
+.banner__text__container {
     margin: 3rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.banner__text__container h2{
+.banner__text__container h2 {
     font-size: 22px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-.banner__text__container p{
+.banner__text__container p {
     font-size: 14px;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
-.banner__text__button{
+.banner__text__button {
     background-color: var(--primary-color);
     width: 50%;
     color: var(--secundary-color);
@@ -34,8 +34,16 @@
     font-size: 14px;
 }
 
-@media screen and (min-width:768px){
-    .banner__text__button{
-        width: 20%;
+@media screen and (min-width: 768px) {
+    .banner__text__button {
+        width: 50%;
+    }
+    .banner__container {
+        height: 352px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .banner__container {
+        height: 352px;
     }
 }
