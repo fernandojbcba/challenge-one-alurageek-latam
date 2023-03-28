@@ -26,14 +26,14 @@ const productId = new URL(window.location).searchParams.get('id')
 
 productServices
     .detalleProductos(productId)
-    .then(({ image, category, name, price, description, id }) => {
+    .then(({ imagen, categoria, nombre, precio, descripcion, id }) => {
         const categoryId = category
         const newLine = productDetailsContent(
-            image,
-            category,
-            name,
-            price,
-            description,
+            imagen,
+            categoria,
+            nombre,
+            precio,
+            descripcion,
             id
         )
         productDetails.innerHTML = newLine
@@ -42,15 +42,22 @@ productServices
             .ListaProductos()
             .then((data) => {
                 data.forEach(
-                    ({ image, category, name, price, description, id }) => {
+                    ({
+                        imagen,
+                        categoria,
+                        nombre,
+                        precio,
+                        descripcion,
+                        id,
+                    }) => {
                         if (id != productId && categoryId === category) {
                             productSimilarItems.appendChild(
                                 createNewLine(
-                                    image,
-                                    category,
-                                    name,
-                                    price,
-                                    description,
+                                    imagen,
+                                    categoria,
+                                    nombre,
+                                    precio,
+                                    descripcion,
                                     id
                                 )
                             )

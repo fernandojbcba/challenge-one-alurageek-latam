@@ -79,7 +79,7 @@ formulario.addEventListener('submit', (evento) => {
         const imageData = event.target.result
 
         productServices
-            .editProduct(
+            .editarProducto(
                 imageData,
                 category,
                 productName,
