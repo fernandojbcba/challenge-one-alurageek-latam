@@ -57,7 +57,7 @@ searchForm.addEventListener('submit', (evento) => {
     if (url.href.includes('search-product')) {
         product.innerHTML = ''
 
-        productServices.searchProducts(nombre).then((data) => {
+        productServices.buscarproductos(nombre).then((data) => {
             if (data != '') {
                 data.forEach(
                     ({
