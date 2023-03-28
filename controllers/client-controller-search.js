@@ -12,15 +12,17 @@ form.addEventListener('submit', (evento) => {
         .listarClientes()
         .then((data) => {
             let userFound = false
+            let nombresesion = ""
             data.forEach(({ email, password, id ,nombre}) => {
                 if (email == inputEmail && password == inputPassword) {
                     userFound = true;
-                    console.log("123");
+                    nombresesion = nombre;
                     return
                 }
             })
             if (userFound) {
                 localStorage.setItem('email', inputEmail)
+                localStorage.setItem('nombrex', nombresesion)
                 window.location.assign(`/`)
             } else {
                 Swal.fire({
