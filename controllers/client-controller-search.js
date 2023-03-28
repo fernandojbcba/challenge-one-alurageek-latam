@@ -18,13 +18,7 @@ form.addEventListener('submit', (evento) => {
             })
             if (userFound) {
                 localStorage.setItem('email', inputEmail)
-                window.location.assign(
-                    `${
-                        window.location.href.includes('alurageek')
-                            ? '/alurageek/'
-                            : ''
-                    }index.html`
-                )
+                window.location.assign(`index.html`)
             } else {
                 Swal.fire({
                     icon: 'error',
