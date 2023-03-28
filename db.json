@@ -74,6 +74,102 @@
             "precio": "660.00",
             "descripcion": "gameboy",
             "id": "a8b7e3a6-7ecd-49c2-bdb2-0fc5sdfq"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/starwar_1.png?raw=true",
+            "categoria": "starwar",
+            "nombre": "mate",
+            "precio": "60.00",
+            "descripcion": "mate blanco",
+            "id": "a8b7e3a6-7sadsadsada"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/starwar_2.png?raw=true",
+            "categoria": "starwar",
+            "nombre": "cabeza mobil",
+            "precio": "105.00",
+            "descripcion": "cabeza mobil",
+            "id": "a8b7e3a6-7ecdsdad7f27cfdasd"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/starwar_3.png?raw=true",
+            "categoria": "starwar",
+            "nombre": "yoda",
+            "precio": "610.00",
+            "descripcion": "yoda",
+            "id": "a8b7e3a6-s"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/starwar_4.png?raw=true",
+            "categoria": "starwar",
+            "nombre": "soldado",
+            "precio": "60.00",
+            "descripcion": "soldado",
+            "id": "a8b7e3a6-7ec5ewqeq"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/starwar_5.png?raw=true",
+            "categoria": "starwar",
+            "nombre": "baby yoda",
+            "precio": "660.00",
+            "descripcion": "babyyoda",
+            "id": "a8b7e7cd-49c2-bdb2-0fc5esadq"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/starwar_6.png?raw=true",
+            "categoria": "starwar",
+            "nombre": "darkvander",
+            "precio": "660.00",
+            "descripcion": "darkvander",
+            "id": "a8b7esd7ecd-49c2-bs0fc5sdfq"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/diversos_1.png?raw=true",
+            "categoria": "diversos",
+            "nombre": "remera atari",
+            "precio": "60.00",
+            "descripcion": "atari",
+            "id": "a8b7e3a6-7sadsafgdfgada"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/diversos_2.png?raw=true",
+            "categoria": "diversos",
+            "nombre": "remera nes",
+            "precio": "105.00",
+            "descripcion": "remera nes",
+            "id": "a8b7e3a6-7fghgjkjfkad-7f27cfdasd"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/diversos_3.png?raw=true",
+            "categoria": "diversos",
+            "nombre": "sonic",
+            "precio": "610.00",
+            "descripcion": "muneco sonic",
+            "id": "a8b7efggdfgh6-s"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/diversos_4.png?raw=true",
+            "categoria": "diversos",
+            "nombre": "radio",
+            "precio": "60.00",
+            "descripcion": "radio",
+            "id": "a8b7e3afddgewqeq"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/diversos_5.png?raw=true",
+            "categoria": "diversos",
+            "nombre": "lentes de realidad virdual",
+            "precio": "660.00",
+            "descripcion": "realidad virtual",
+            "id": "a8b7e7cd-49c2-bsdasd5esadq"
+        },
+        {
+            "imagen": "https://github.com/fernandojbcba/challenge-one-alurageek-latam/blob/main/img/productos/diversos_6.png?raw=true",
+            "categoria": "diversos",
+            "nombre": "pikachhu",
+            "precio": "660.00",
+            "descripcion": "picaku",
+            "id": "a8b7esd7ecsdsdadbs0fc5sdfq"
         }
     ]
 }

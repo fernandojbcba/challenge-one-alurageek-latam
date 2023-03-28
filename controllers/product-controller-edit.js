@@ -35,10 +35,10 @@ const getInformation = async () => {
             product.precio &&
             product.description
         ) {
-            category.value = product.categoria
-            name.value = product.nombre
-            price.value = product.precio
-            description.value = product.descripcion
+            categoria.value = product.categoria
+            nombre.value = product.nombre
+            precio.value = product.precio
+            descripcion.value = product.descripcion
         } else {
             throw new Error()
         }
