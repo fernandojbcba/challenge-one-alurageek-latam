@@ -95,7 +95,11 @@
     }
 
     .header__container__login {
-        order: 3;
+        order: 4;
+        justify-content: flex-end;
+    }
+    .header__container__nombrelog {
+        order:3;
         justify-content: flex-end;
     }
 
