@@ -19,6 +19,7 @@ form.addEventListener('submit', (evento) => {
             if (userFound) {
                 localStorage.setItem('email', inputEmail)
                 window.location.assign(`/`)
+                console.log('hola')
             } else {
                 Swal.fire({
                     icon: 'error',
