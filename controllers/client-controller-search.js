@@ -7,7 +7,7 @@ form.addEventListener('submit', (evento) => {
     const inputEmail = document.querySelector('[data-email]').value
     const inputPassword = document.querySelector('[data-password]').value
     clientServices
-        .clientsList()
+        .listarClientes()
         .then((data) => {
             let userFound = false
             data.forEach(({ email, password, id }) => {

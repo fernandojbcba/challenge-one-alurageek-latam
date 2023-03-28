@@ -2,19 +2,19 @@ import { productServices } from '../service/product-service.js'
 import { createNewLine } from '../controllers/product-controller.js'
 
 const productDetailsContent = (
-    image,
-    category,
-    name,
-    price,
-    description,
+    imagen,
+    categoria,
+    nombre,
+    precio,
+    descripcion,
     id
 ) => {
     let content = `
-        <img class="product__img" src="${image}" alt="">
+        <img class="product__img" src="${imagen}" alt="">
         <div class="product__details">
-            <h2 class="product__name">${name}</h2>
-            <h2 class="product__price">${price}</h2>
-            <p class="product__description">${description}</p>
+            <h2 class="product__name">${nombre}</h2>
+            <h2 class="product__price">${precio}</h2>
+            <p class="product__description">${descripcion}</p>
         </div>
     `
     return content
@@ -50,7 +50,7 @@ productServices
                         descripcion,
                         id,
                     }) => {
-                        if (id != productId && categoryId === category) {
+                        if (id != productId && categoryId === categoria) {
                             productSimilarItems.appendChild(
                                 createNewLine(
                                     imagen,

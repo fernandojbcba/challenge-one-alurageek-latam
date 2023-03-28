@@ -22,7 +22,7 @@ if (url.href.includes('search-product')) {
     if (!q) {
         product.appendChild(showMessage())
     } else {
-        productServices.searchProducts(q).then((data) => {
+        productServices.buscarproductos(q).then((data) => {
             if (data != '') {
                 data.forEach(
                     ({
@@ -53,7 +53,7 @@ if (url.href.includes('search-product')) {
 
 searchForm.addEventListener('submit', (evento) => {
     evento.preventDefault()
-    const name = document.querySelector('[data-searchinput]').value
+    const nombre = document.querySelector('[data-searchinput]').value
     if (url.href.includes('search-product')) {
         product.innerHTML = ''
 
