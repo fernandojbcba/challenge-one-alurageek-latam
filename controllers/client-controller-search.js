@@ -15,14 +15,13 @@ form.addEventListener('submit', (evento) => {
             data.forEach(({ email, password, id ,nombre}) => {
                 if (email == inputEmail && password == inputPassword) {
                     userFound = true
-                    consosle.log(nombre)
                     return
                 }
             })
             if (userFound) {
-                localStorage.setItem('email', inputEmail)
-               
-                window.location.assign(`/`)
+                localStorage.setItem('email', inputEmail);
+                console.log(nombre);
+                window.location.assign(`/`);
             } else {
                 Swal.fire({
                     icon: 'error',
