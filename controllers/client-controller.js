@@ -7,9 +7,9 @@ const headerClientContent = `<button id="login_btn"><a href="login.html">Login</
 const headerNombreContent = `<h2 id="nombre_log">Hola, ${nombrexx}</h2>`;
 
 if (userLoggedIn()) {
-    loginContainer.innerHTML = headerAdminContent && headerNombreContent;
+    loginContainer.innerHTML = headerAdminContent;
     document.getElementById("login_btn").addEventListener("click", userLogout);
-    
+    loginContainer.innerHTML = headerNombreContent;
 } else {
     loginContainer.innerHTML = headerClientContent;
 }
